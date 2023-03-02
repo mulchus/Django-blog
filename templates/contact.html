@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
-{% block content %}
+{% block content1 %}
+  <title>Sensive Blog - Contacts</title>
+{% endblock %}
+
+{% block content2 %}
   <!--================ Hero sm banner start =================-->
   <section class="mb-30px">
     <div class="container">
@@ -24,7 +28,7 @@
   <section class="section-margin--small section-margin">
     <div class="container">
       <div class="d-none d-sm-block mb-5 pb-4">
-        Тут будет карта
+        {{ html_map|safe }}
       </div>
 
 
